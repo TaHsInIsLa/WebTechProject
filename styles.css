@@ -1,0 +1,107 @@
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background: #eee;
+  }
+  body {
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .top-image {
+    max-width: 250px;
+    width: 150%;
+    height: auto;          
+    object-fit: cover;      
+    border-radius: 100%;    
+    
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    grid-template-rows: 1fr 0.3fr;
+    width: 600px;
+    height: 600px;
+    background: #ccc;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  }
+  .blue-box {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    background-color: #4aa3ff;
+    padding: 20px;
+    color: white;
+    overflow-y: auto;
+  }
+  .green-box {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    background-color: #73d176;
+  }
+  .pink-box {
+  filter: blur(5px); 
+  pointer-events: none; 
+  user-select: none;    
+}
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  label {
+    margin-top: 12px;
+    font-weight: bold;
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="date"],
+  select,
+  textarea {
+    margin-top: 5px;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  textarea {
+    resize: vertical;
+    min-height: 60px;
+  }
+  .gender-options {
+    margin-top: 5px;
+    display: flex;
+    gap: 10px;
+  }
+  .gender-options label {
+    font-weight: normal;
+  }
+  .terms {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  button {
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    background-color: #07387f;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  button:hover {
+    background-color: #0056b3;
+  }
+
+ 

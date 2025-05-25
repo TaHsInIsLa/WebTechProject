@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>AQI</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+ 
+  <img src="Screenshot 2025-05-22 201557.png" alt="Top Figure" class="top-image" style="width:150px;height:160px;">
+<h3>AQI for Mankind</h3>
+  <div class="container">
+    <div class="blue-box">
+      <h2>Registration Form</h2>
+<form id="registrationForm" action="submit.php" method="POST" onsubmit="return validateForm()">
+      
+        <label for="fullname">Full Name</label>
+        <input type="text" id="fullname" name="fullname" required />
+
+        <label>Gender</label>
+        <div class="gender-options">
+          <label><input type="radio" name="gender" value="male" required /> Male</label>
+          <label><input type="radio" name="gender" value="female" /> Female</label>
+          <label><input type="radio" name="gender" value="other" /> Other</label>
+        </div>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required />
+
+        <label for="confirm-password">Confirm Password</label>
+        <input type="password" id="confirm-password" name="confirm-password" required />
+
+        <label for="dob">Date of Birth</label>
+        <input type="date" id="dob" name="dob" required />
+
+        <label for="country">Country</label>
+        <select id="country" name="country" required>
+          <option value="">-- Select Country --</option>
+          <option value="bangladesh">Bangladesh</option>
+          <option value="usa">USA</option>
+          <option value="uk">UK</option>
+          <option value="india">India</option>
+          <option value="other">Other</option>
+        </select>
+
+        <label for="opinion">Opinion</label>
+        <textarea id="opinion" name="opinion" placeholder="Your opinion here..."></textarea>
+
+        <div class="terms">
+          <input type="checkbox" id="terms" name="terms" required />
+          <label for="terms">
+            I accept the <a href="terms.html" target="_blank" style="color: #fff; text-decoration: underline;">
+      Terms and Conditions
+    </a>
+        </div>
+
+        <button type="submit">Register</button>
+      </form>
+    </div>
+    <div class="green-box">
+      <h2>Login</h2>
+  <form id="loginForm" action="login.php" method="POST" onsubmit="return validateLogin()">
+    <label for="login-email">Email</label>
+    <input type="email" id="login-email" name="email" required />
+
+    <label for="login-password">Password</label>
+    <input type="password" id="login-password" name="password" required />
+
+    <button type="submit">Login</button>
+  </form>
+    </div>
+    <div class="blurrywood-box">
+      <link rel="stylesheet" href="table_style.css" />
+      
+<table>
+  <thead>
+    <tr>
+      <th>Country</th>
+      <th>City</th>
+      <th>AQI Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>Bangladesh</td><td>Dhaka</td><td>175</td></tr>
+    <tr><td>India</td><td>Delhi</td><td>220</td></tr>
+    <tr><td>China</td><td>Beijing</td><td>180</td></tr>
+    <tr><td>USA</td><td>Los Angeles</td><td>90</td></tr>
+    <tr><td>Pakistan</td><td>Karachi</td><td>160</td></tr>
+    <tr><td>Russia</td><td>Moscow</td><td>70</td></tr>
+    <tr><td>Japan</td><td>Tokyo</td><td>55</td></tr>
+    <tr><td>UK</td><td>London</td><td>65</td></tr>
+    <tr><td>Australia</td><td>Sydney</td><td>45</td></tr>
+    <tr><td>Germany</td><td>Berlin</td><td>75</td></tr>
+
+
+      <img src="Screenshot 2025-05-23 154259.png" alt="Right Figure" class="top-image" style="width:250px;height:160px;">
+
+
+  </tbody>
+</table>
+
+
+    </div>
+  </div>
+    <script src="validation.js"></script>
+    <link rel="stylesheet" href="login.css" />
+
+</body>
+</html>

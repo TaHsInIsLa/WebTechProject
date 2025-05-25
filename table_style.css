@@ -1,0 +1,24 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    filter: blur(4px); 
+  }
+  thead tr {
+    background-color: #4aa3ff;
+    color: white;
+    text-align: left;
+  }
+  thead th, tbody td {
+    padding: 3px 15px;
+  }
+  tbody tr:nth-child(even) {
+    background-color: #f4f6f8;
+  }
+  tbody tr:hover {
+    background-color: #cce4ff;
+  }
+  tbody td {
+    border-bottom: 1px solid #ddd;
+  }
